@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d7acfc4f65e724c8a0c80167fab18e, type: 3}
+  m_Name: Obstcale_ExtraLargeBall
+  m_EditorClassIdentifier: 
+  <Prefab>k__BackingField: {fileID: 2763726980145569114, guid: 60cf3283a2d00734a92c98222b72a334, type: 3}
+  <Children>k__BackingField:
+  - <Amount>k__BackingField: 2
+    <Child>k__BackingField: {fileID: 11400000, guid: 26946a6f528ed364cb15077f8deb785e, type: 2}

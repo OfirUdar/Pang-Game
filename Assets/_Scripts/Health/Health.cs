@@ -2,7 +2,7 @@
 
 namespace Game
 {
-    public class Health : IDamagable
+    public class Health : IDamageable
     {
         private readonly int _initalizeHp;
         private int _currentHp;
@@ -10,7 +10,7 @@ namespace Game
         private readonly IDiedCommand _diedCommand;
 
 
-        public Health(int initalizeHealthData,[Zenject.InjectOptional] IDiedCommand diedCommand)
+        public Health(int initalizeHealthData, IDiedCommand diedCommand)
         {
             _initalizeHp = initalizeHealthData;
             _currentHp = _initalizeHp;
@@ -23,13 +23,13 @@ namespace Game
             _currentHp = Math.Max(0, _currentHp - amount);
 
             if (_currentHp == 0)
-                _diedCommand?.Execute();
+                _diedCommand.Execute();
         }
 
         public void TakeFullDamage()
         {
             _currentHp = 0;
-            _diedCommand?.Execute();
+            _diedCommand.Execute();
         }
     }
 

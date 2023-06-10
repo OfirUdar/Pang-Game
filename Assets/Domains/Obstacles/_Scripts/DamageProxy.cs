@@ -3,12 +3,12 @@ using Zenject;
 
 namespace Game.Obstcale
 {
-    public class DamageProxy : MonoBehaviour, IDamagable
+    public class DamageProxy : MonoBehaviour, IDamageable
     {
-        private IDamagable _damageable;
+        private IDamageable _damageable;
 
         [Inject]
-        public void Construct(IDamagable damagable)
+        public void Construct(IDamageable damagable)
         {
             _damageable = damagable;
         }

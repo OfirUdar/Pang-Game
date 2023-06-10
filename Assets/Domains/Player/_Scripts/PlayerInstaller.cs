@@ -14,6 +14,10 @@ namespace Game.Player
 
         public override void InstallBindings()
         {
+            var hp = 100;
+            Container.BindInterfacesAndSelfTo<Health>().AsSingle().WithArguments(hp);
+            Container.Bind<IDiedCommand>().To<PlayerDiedCommand>().AsSingle();
+
             Container.BindInterfacesAndSelfTo<Shooter>().AsSingle();
             Container.Bind(typeof(ITickable), typeof(IFixedTickable)).To<Movement>().AsSingle()
                 .WithArguments(_playerRigidBody, _movemenetData);

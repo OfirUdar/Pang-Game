@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -8815269748463590766}
   - component: {fileID: 2941991117072871297}
   - component: {fileID: 2518600916903272739}
+  - component: {fileID: -5316383643998235768}
   m_Layer: 6
   m_Name: Obstcale_SmallBall
   m_TagString: Untagged
@@ -104,6 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9a271c9221a62e4da7f54a6ed0068e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _startForce: {x: 2, y: 0}
   _rigidbody: {fileID: 591646749239813055}
   _ballData: {fileID: 11400000, guid: 33bf46cbeb93fbb4780d274ce69a8965, type: 2}
 --- !u!114 &2518600916903272739
@@ -116,6 +118,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecf9488b9ff93544ab0d4981a12cf8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-5316383643998235768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2763726980145569114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8425ef77f1b7d04299c321fe42cda4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2875284696768825640
@@ -224,7 +238,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.3284663, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

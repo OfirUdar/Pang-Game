@@ -184,7 +184,8 @@ MonoBehaviour:
       m_Calls: []
   _parentNewObjectsUnderSceneContext: 0
   _contractNames: []
-  _parentContractNames: []
+  _parentContractNames:
+  - Setup
 --- !u!4 &1916169488
 Transform:
   m_ObjectHideFlags: 0

@@ -17,10 +17,11 @@ namespace Game.Weapon
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.gameObject.tag.Equals("Wall"))
+            if (collision.gameObject.CompareTag("Wall"))
                 gameObject.SetActive(false);
 
-            if (collision.transform.TryGetComponent(out IDamagable damagable))
+            if (!collision.gameObject.CompareTag("Player") &&
+                collision.transform.TryGetComponent(out IDamageable damagable))
             {
                 damagable.TakeFullDamage();
                 gameObject.SetActive(false);
